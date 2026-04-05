@@ -30,7 +30,7 @@
 
             <!-- DEVICE ID -->
             <EditText
-                android:id="@+id/etDeviceId"
+                android:id="@+id/etDeviceId_GIT"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:hint="Enter Device ID"
@@ -42,7 +42,7 @@
 
             <!-- SEND OTP -->
             <Button
-                android:id="@+id/btnSendOtp"
+                android:id="@+id/btnSendOtp_GIT"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="Send OTP"
