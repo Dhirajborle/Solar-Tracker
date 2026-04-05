@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- SCROLL CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solar Tracker"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <!-- 3D MODEL -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/glass_input">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="3D Model Area"
+                    android:textColor="#80FFFFFF"/>
+            </FrameLayout>
+
+            <!-- ROW 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tvXAngle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:text="X Angle: 0°"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/glass_input"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvYAngle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:text="Y Angle: 0°"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/glass_input"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- ROW 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvVoltage"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:text="Voltage: 0V"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/glass_input"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvCurrent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:text="Current: 0A"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/glass_input"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- POWER -->
+            <TextView
+                android:id="@+id/tvPower"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Power: 0W"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/glass_input"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FIXED BOTTOM BAR -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- REFRESH -->
+        <ImageView
+            android:id="@+id/btnRefresh"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circle_bg"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_popup_sync"
+            app:tint="#FFFFFF"/>
+
+        <!-- HOME -->
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/circle_bg"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_view"
+            app:tint="#FFFFFF"/>
+
+        <!-- PROFILE -->
+        <ImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/circle_bg"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            app:tint="#FFFFFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- SCROLL CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <!-- USER DETAILS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Details"
+                android:textColor="#B3FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <!-- NAME -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Name: Dhiraj"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/glass_input"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- EMAIL -->
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Email: example@mail.com"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/glass_input"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- PHONE -->
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Phone: 1234567890"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/glass_input"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- DEVICE STATUS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solar Device"
+                android:textColor="#B3FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/tvDeviceStatus"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="No Device Connected"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/glass_input"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- ADD DEVICE BUTTON -->
+            <Button
+                android:id="@+id/btnAddDevice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Add Your Solar Device"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2196F3"
+                android:layout_marginTop="20dp"/>
+
+            <!-- LOGOUT BUTTON (BOTTOM) -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1976D2"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BOTTOM NAVIGATION -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- REFRESH -->
+        <ImageView
+            android:id="@+id/btnRefresh"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circle_bg"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_popup_sync"
+            app:tint="#FFFFFF"/>
+
+        <!-- HOME -->
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/circle_bg"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_view"
+            app:tint="#FFFFFF"/>
+
+        <!-- PROFILE -->
+        <ImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/circle_bg"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            app:tint="#FFFFFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
