@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095390731299",
+    "project_id": "solar-tracker-8e3c2",
+    "storage_bucket": "solar-tracker-8e3c2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095390731299:android:e6b2260593c2fb9fb52596",
+        "android_client_info": {
+          "package_name": "com.example.solartracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095390731299-pmf21du9lju0rk4td74cfj7tb1l9ko06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0JttizRYMB-OX_4uhdsMylsJDOj-Ktwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095390731299-pmf21du9lju0rk4td74cfj7tb1l9ko06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
