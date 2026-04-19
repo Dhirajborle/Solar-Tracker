@@ -42,16 +42,19 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 
-    // ✅ Firebase BoM (IMPORTANT)
+    // 🔥 Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:34.11.0"))
 
-    // ✅ Firebase Authentication
+    // 🔐 Auth
     implementation("com.google.firebase:firebase-auth")
 
-    // ✅ Firestore Database
+    // 📄 Firestore (Profile)
     implementation("com.google.firebase:firebase-firestore")
 
-    // ✅ Optional Analytics
+    // 🔥 ADD THIS (IMPORTANT FOR ESP DATA)
+    implementation("com.google.firebase:firebase-database")
+
+    // 📊 Analytics (optional)
     implementation("com.google.firebase:firebase-analytics")
 
     testImplementation(libs.junit)
